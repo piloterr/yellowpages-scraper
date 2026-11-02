@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.yellowpages.com/los-angeles-ca/mip/anawalt-lumber-13945594?lid=1002108313121",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -172,7 +172,7 @@ response = requests.get(
     params={
         "query": "https://www.yellowpages.com/los-angeles-ca/plumbers",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
